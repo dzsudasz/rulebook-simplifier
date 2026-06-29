@@ -1,7 +1,7 @@
-package com.dzsudasz.rulebook_simplifier;
+package com.dzsudasz.rulebooksimplifier;
 
-import com.dzsudasz.rulebooksimplifier.RulebookSimplifierApplication;
 import org.springframework.boot.SpringApplication;
+import org.testcontainers.utility.TestcontainersConfiguration;
 
 public class TestRulebookSimplifierApplication {
 

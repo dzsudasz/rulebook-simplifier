@@ -1,4 +1,4 @@
-package com.dzsudasz.rulebook_simplifier;
+package com.dzsudasz.rulebooksimplifier;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
