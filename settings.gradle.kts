@@ -1,1 +1,1 @@
-rootProject.name = "rulebook"
+rootProject.name = "rulebook-simplifier"

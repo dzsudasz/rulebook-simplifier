@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: rulebook-simplifier
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rulebook-simplifier
+    username: dev
+    password: pw
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: rule-synthesizer-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
